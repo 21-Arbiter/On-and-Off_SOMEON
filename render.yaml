@@ -1,0 +1,30 @@
+# Render Blueprint: matching server (Dockerfile). Free plan sleeps after 15 idle minutes;
+# open /health a minute before a demo to wake it.
+services:
+  - type: web
+    name: drive-mate
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
+    # The server's two secrets (verification tokens, blurred areas): Render makes each a random
+    # 256-bit value the first time a sync finds it missing and keeps it after; never in git.
+    envVars:
+      - key: VERIFY_SECRET
+        generateValue: true
+      - key: AREA_SECRET
+        generateValue: true
+    # Redeploying restarts the server and forgets cars until they send their pattern again,
+    # so only server changes trigger it.
+    buildFilter:
+      paths:
+        - server/**
+        - core/**
+        - tools/scenarios/**
+        - gradle/**
+        - Dockerfile
+        - render.yaml
+        - settings.gradle.kts
+        - build.gradle.kts

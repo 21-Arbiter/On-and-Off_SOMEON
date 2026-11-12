@@ -1,0 +1,5 @@
+# R8 keep rules for release builds (AGP 9: this keepRules folder, read with optimization.enable).
+# Classes keep their names and packages. Optimizing only some libraries (packageScope), R8 otherwise
+# moved a coroutines class out of the package of the kotlin.sequences class it extends, and the app
+# stopped at start with IllegalAccessError.
+-dontobfuscate

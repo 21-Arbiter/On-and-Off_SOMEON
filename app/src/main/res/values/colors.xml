@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The icon tile's own lavender, behind the launcher artwork -->
+    <color name="icon_background">#FFF1EEF9</color>
+    <!-- Behind the app while it starts; values-night has the night one -->
+    <color name="window_background">#FFF2F3F7</color>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The icon's lit pin: a map pin with a heart cut out (notifications, themed launcher icon) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7z M12,12.6C12,12.6 8.6,10.5 8.6,7.9C8.6,6.7 9.5,5.8 10.6,5.8C11.2,5.8 11.7,6.1 12,6.6C12.3,6.1 12.8,5.8 13.4,5.8C14.5,5.8 15.4,6.7 15.4,7.9C15.4,10.5 12,12.6 12,12.6Z" />
+</vector>

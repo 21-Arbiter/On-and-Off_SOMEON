@@ -1,0 +1,22 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+*.keystore
+*.jks
+__pycache__/
+*.pyc
+
+# Submission files too large for git (kept locally, sent with the application)
+/submission/*.webm
+/submission/*.mp4
+/submission/*.apk
+/submission/*.MOV
+/submission/*.mov
